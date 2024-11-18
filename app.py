@@ -1,7 +1,7 @@
 import backend as be
 import streamlit as st
 from PIL import Image
-data = {"BALA": '101', "CHANDRU": '102', "MOHAN": '103', "ASHARAJA": '104',"DEVA":'105',"SHALNI":'106' }
+data = {"BALA": '101', "CHANDRU": '102', "MOHAN": '103', "ASHARAJA": '104',"DEVA":'105',"SHALINI":'106' }
 design="------------------------------------------------------------------------------------"
 if 'student' not in st.session_state:
     st.session_state.student = None
