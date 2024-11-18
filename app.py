@@ -25,6 +25,7 @@ if st.sidebar.button("Login"):
             break
         else:
             st.error("Invalid UserName or Password")
+            st.session_state.submitted = False
             break
 
 if st.session_state.submitted:
