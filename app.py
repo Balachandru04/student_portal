@@ -1,4 +1,4 @@
-import BA as be
+import backend as be
 import streamlit as st
 from PIL import Image
 data = {"BALA": '434', "CHANDRU": '102', "MOHAN": '555', "ASHARAJA": '321',"DEVA":'777',"SHALINI":'316',"THAZIM":'696' }
