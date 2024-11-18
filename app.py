@@ -13,7 +13,7 @@ name= st.sidebar.text_input("Username:").upper()
 reg_no=st.sidebar.text_input("Password",type="password")
 
 if st.sidebar.button("Login"):
-    if name in data.keys() and reg_no in data[name]:
+    if name in data.keys() and reg_no== data[name]:
         class_name = name   
         student_class = getattr(be, class_name) 
         student = student_class()
