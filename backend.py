@@ -82,3 +82,18 @@ class SHALINI:
         self.img=Image.open("assets/bala.png")
         self.phone=8122687009
         self.mail_id="Shalini125@gmail.com"
+
+
+class THAZIM:
+    def __init__(self):
+        self.attendance=60
+        self.mini_project=8
+        self.assignment=7
+        self.finall_project=9
+        self.total=self.mini_project + self.assignment + self.finall_project
+        self.course="Master in SQL"
+        self.batch=1
+        self.instution_name="SkillEdge Coaching"
+        self.img=Image.open("assets/bala.png")
+        self.phone=8122687009
+        self.mail_id="Shalini125@gmail.com"
