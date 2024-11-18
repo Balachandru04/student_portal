@@ -1,4 +1,4 @@
-import backend as be
+import BA as be
 import streamlit as st
 from PIL import Image
 data = {"BALA": '434', "CHANDRU": '102', "MOHAN": '555', "ASHARAJA": '321',"DEVA":'777',"SHALINI":'316',"THAZIM":'696' }
@@ -13,17 +13,19 @@ name= st.sidebar.text_input("Username:").upper()
 reg_no=st.sidebar.text_input("Password",type="password")
 
 if st.sidebar.button("Login"):
-    if name in data.keys() and reg_no== data[name]:
-        class_name = name   
-        student_class = getattr(be, class_name) 
-        student = student_class()
-
-        st.session_state.student = student
-        st.session_state.submitted = True  
-        st.success(f"Welcome {name.title()}, Login successfully!")
-        
-    else:
-        st.error("Invalid UserName or Password")
+    for keys in data.keys():
+        if name in data.keys() and reg_no == data[name]:
+            class_name = name   
+            student_class = getattr(be, class_name) 
+            student = student_class()
+    
+            st.session_state.student = student
+            st.session_state.submitted = True  
+            st.success(f"Welcome {name.title()}, Login successfully!")
+            break
+        else:
+            st.error("Invalid UserName or Password")
+            break
 
 if st.session_state.submitted:
     st.header(f"{name}")
