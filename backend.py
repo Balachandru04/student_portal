@@ -10,7 +10,7 @@ class BALA:
         self.course="Master in SQL"
         self.batch=1
         self.instution_name="SkillEdge Coaching"
-        self.img=Image.open(r"E:\Screenshot\bala.png")
+        self.img=Image.open("assets/bala.png")
         self.phone=8122687009
         self.mail_id="balachandrusingaram@gmail.com"
 class CHANDRU:
@@ -23,7 +23,7 @@ class CHANDRU:
         self.course="Master in Python"
         self.batch=1
         self.instution_name="ABC Coaching"
-        self.img=Image.open(r"E:\Screenshot\chandru.png")
+        self.img=Image.open("assets/chandru.png")
         self.phone=9786424873
         self.mail_id="balachandrus2006@gmail.com"
 
@@ -37,7 +37,7 @@ class MOHAN:
         self.course="Master in Python"
         self.batch=1
         self.instution_name="SkillEdge Coaching"
-        self.img=Image.open(r"E:\Screenshot\mohan.png")
+        self.img=Image.open("assets/mohan.png")
         self.phone=9342797914
         self.mail_id="mohans0110@gmail.com"
 
@@ -51,6 +51,6 @@ class ASHARAJA:
         self.course="Master in PowerBI"
         self.batch=1
         self.instution_name="SkillEdge Coaching"
-        self.img=Image.open("E:\\Screenshot\\asharaja.png")
+        self.img=Image.open("assets/asharaja.png")
         self.phone=9942890973
         self.mail_id="asharaja143@gmail.com"
