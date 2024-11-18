@@ -1,7 +1,7 @@
 import backend as be
 import streamlit as st
 from PIL import Image
-data = {"BALA": '101', "CHANDRU": '102', "MOHAN": '103', "ASHARAJA": '104',"DEVA":'105',"SHALINI":'106' }
+data = {"BALA": '434', "CHANDRU": '102', "MOHAN": '555', "ASHARAJA": '321',"DEVA":'777',"SHALINI":'316' }
 design="------------------------------------------------------------------------------------"
 if 'student' not in st.session_state:
     st.session_state.student = None
@@ -9,7 +9,7 @@ if 'submitted' not in st.session_state:
     st.session_state.submitted = False
 
 st.header("Welcome to Students Login Portal")
-name= st.text_input("Username:",type="password").upper()
+name= st.text_input("Username:").upper()
 reg_no=st.text_input("Password",type="password")
 
 if st.button("Login"):
