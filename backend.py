@@ -69,7 +69,7 @@ class DEVA:
         self.phone=8122687009
         self.mail_id="deva185@gmail.com"
 
-class SHALNI:
+class SHALINI:
     def __init__(self):
         self.attendance=60
         self.mini_project=8
