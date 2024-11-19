@@ -34,6 +34,7 @@ if st.session_state.submitted:
     student_info = st.button("Student Information")
     student = st.session_state.student
     st.sidebar.image(student.img, width=200)
+    st.sidebar.head(f" <h4>{name.title()} </h4>" , unsafe_allow_html=True)
     if student_info:
         if st.session_state.student:
             #student = st.session_state.student
@@ -43,8 +44,8 @@ if st.session_state.submitted:
             st.markdown(f"course: {student.course}")
             st.markdown(f"Batch: {student.batch}")
             st.markdown(f"Instution name: {student.instution_name}")
-            st.image(student.img ,width=200)
-            st.header(f"{name.lower()}")
+            # st.image(student.img ,width=200)
+            # st.header(f"{name.title()}")
     student_attendance = st.button("Attendance")
     if student_attendance:
         if st.session_state.student:
