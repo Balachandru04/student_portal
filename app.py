@@ -29,7 +29,7 @@ if st.sidebar.button("Login"):
             break
 
 if st.session_state.submitted:
-    st.header(f"{name}")
+    st.header(f"{name}.title()")
     st.title("Select what details you needed")
     student_info = st.button("Student Information")
     student = st.session_state.student
