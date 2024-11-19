@@ -32,9 +32,11 @@ if st.session_state.submitted:
     st.header(f"{name}")
     st.title("Select what details you needed")
     student_info = st.button("Student Information")
+    student = st.session_state.student
+    st.sidebar.image(student.img, width=200)
     if student_info:
         if st.session_state.student:
-            student = st.session_state.student
+            #student = st.session_state.student
             st.title("Student Information:")
             st.text(design)
             st.markdown(f"Name: {name.title()}")
@@ -46,7 +48,7 @@ if st.session_state.submitted:
     student_attendance = st.button("Attendance")
     if student_attendance:
         if st.session_state.student:
-            student = st.session_state.student
+            #student = st.session_state.student
             leave=90-student.attendance
             st.title("Attendance Details:")
             st.text(design)
@@ -56,7 +58,7 @@ if st.session_state.submitted:
     mark_details = st.button("Mark Details")
     if mark_details:
         if st.session_state.student:
-            student = st.session_state.student
+            #student = st.session_state.student
             st.title("Mark Details:")
             st.text(design)
             st.markdown(f"name:          {name}")
@@ -67,7 +69,7 @@ if st.session_state.submitted:
     grade_button = st.button("Grade")
     if grade_button:
         if st.session_state.student:
-            student = st.session_state.student
+            #student = st.session_state.student
             st.title("Grade:")
             st.text(design)
             st.markdown(f"<h5>Total marks : 30</h5> \n<h5>your total marks is {student.total} </h5> ",unsafe_allow_html=True)
@@ -88,11 +90,13 @@ if st.session_state.submitted:
     contact_info=st.button("Contact Details")
     if contact_info:
         if st.session_state.student:
-            student = st.session_state.student
+            #student = st.session_state.student
             st.title("Contact info:")
             st.text(design)
             st.markdown(f"<h5>Mobile Number : {student.phone}</h5>",unsafe_allow_html=True)
             st.markdown(f"<h5>Mail_ID : {student.mail_id}</h5>",unsafe_allow_html=True)
     exit_button=st.button("Logout")
     if exit_button:
+        st.session_state.student = None
+        st.session_state.submitted = False
         st.session_state.clear()
