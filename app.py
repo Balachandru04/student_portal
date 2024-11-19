@@ -101,3 +101,4 @@ if st.session_state.submitted:
         st.session_state.student = None
         st.session_state.submitted = False
         st.session_state.clear()
+        st.rerun()
