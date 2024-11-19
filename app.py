@@ -21,7 +21,7 @@ if st.sidebar.button("Login"):
     
             st.session_state.student = student
             st.session_state.submitted = True  
-            st.success(f"Welcome {name.title()}, Login successfully!")
+            st.sidebar.success(" Login successfully!")
             break
         else:
             st.error("Invalid UserName or Password")
@@ -29,7 +29,7 @@ if st.sidebar.button("Login"):
             break
 
 if st.session_state.submitted:
-    st.header(f"{name.title() }")
+    st.success(f"{name.title() }")
     st.title("Select what details you needed")
     student_info = st.button("Student Information")
     student = st.session_state.student
