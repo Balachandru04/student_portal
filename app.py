@@ -34,7 +34,7 @@ if st.session_state.submitted:
     student_info = st.button("Student Information")
     student = st.session_state.student
     st.sidebar.image(student.img, width=200)
-    st.sidebar.head(f" <h4>{name.title()} </h4>" , unsafe_allow_html=True)
+    st.sidebar.header(f"<h5>{name .title()}</h5> ",unsafe_allow_html=True)
     if student_info:
         if st.session_state.student:
             #student = st.session_state.student
