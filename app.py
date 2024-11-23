@@ -9,7 +9,7 @@ if 'submitted' not in st.session_state:
     st.session_state.submitted = False
 
 st.header("Welcome to Students Login Portal")
-name= st.sidebar.text_input("Username:",type="password").upper()
+name= st.sidebar.text_input("Username:").upper()
 reg_no=st.sidebar.text_input("Password",type="password")
 
 if st.sidebar.button("Login"):
